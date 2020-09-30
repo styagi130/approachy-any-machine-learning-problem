@@ -1,0 +1,43 @@
+!!python/object:types.SimpleNamespace
+"total_datapath" : 
+        /home/kwantics/python3-tasks/torchCodes/india_mart-spam_nonSpam/inputs/text/indiamartClassificationData.csv
+"train_filepath" : 
+        /home/kwantics/python3-tasks/torchCodes/india_mart-spam_nonSpam/inputs/text/indiamartClassificationData_tr.csv
+"test_filepath" : 
+        /home/kwantics/python3-tasks/torchCodes/india_mart-spam_nonSpam/inputs/text/indiamartClassificationData_te.csv
+"train_fold_filepath" :
+        /home/kwantics/python3-tasks/torchCodes/india_mart-spam_nonSpam/inputs/text/indiamartClassificationData_tr_fold.csv
+"train_fold_optimization" :
+        /home/kwantics/python3-tasks/torchCodes/india_mart-spam_nonSpam/inputs/text/indiamartClassificationData_tr_fold_optimization.csv
+
+"wv_filepath" :
+        /home/kwantics/python3-tasks/torchCodes/india_mart-spam_nonSpam/inputs/word2vec_kwantics/cbowVec.vec
+"model_dirpath" :
+        /home/kwantics/python3-tasks/torchCodes/india_mart-spam_nonSpam/models
+
+"cv_type" : "kfold"
+"num_folds" : 4
+"max_iter" : 500
+"n_jobs" : 8
+"lr" : 0.0001
+"eval_batch_size": 32
+"train_batch_size": 32
+"num_workers": 4
+"early_stopping_backsteps" : 150
+"epochs" : 1000
+"start_early_stop" : 80
+
+"model_name" : lstm
+"model_kwargs" : null
+
+
+"data" :
+  "columns" :
+      - "text"
+      - "tagInt"
+  "names" :
+      "text" : "feature"
+      "tagInt" : "labels"
+  "allowed_punct" : ""
+  "test_size" : 300
+  "fold_size" : 300
