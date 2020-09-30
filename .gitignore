@@ -1,0 +1,8 @@
+*.out
+*.bin
+*.ckpt
+*.npy
+*.vec
+*.json
+.vscode
+*.csv
